@@ -2,6 +2,7 @@ import { Dialog } from "@/components/Dialog";
 import { generateSlug } from "@/utils/generateSlug";
 import kv from "@vercel/kv";
 import { redirect } from "next/navigation";
+import { experimental_useFormStatus as useFormStatus } from "react-dom";
 
 export const runtime = "edge";
 
@@ -29,6 +30,8 @@ const createLink = async (formData: FormData) => {
 };
 
 export default async function Home() {
+  const { pending } = useFormStatus();
+
   return (
     <>
       <div className="flex flex-col gap-4 items-center justify-center min-h-screen">
@@ -46,12 +49,14 @@ export default async function Home() {
             autoComplete="off"
             id="url"
             type="url"
+            disabled={pending}
             placeholder="https://example.com/very-long-link-oh-god-123123123"
           />
           <div className="cursor-pointer items-center group will-change-transform flex rounded-full duration-100 bg-emerald-800 text-white font-semibold  transition-all hover:-translate-y-1">
             <button
-              className="hover:bg-emerald-700 focus-within:ring ring-emerald-600 rounded-l-full outline-none transition-colors flex-1 h-full px-4"
+              className="hover:bg-emerald-700 disabled:opacity-50 focus-within:ring ring-emerald-600 rounded-l-full outline-none transition-colors flex-1 h-full px-4"
               type="submit"
+              disabled={pending}
             >
               shorten!
             </button>
