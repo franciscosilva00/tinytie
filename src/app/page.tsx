@@ -1,5 +1,4 @@
-import { Button } from "@/components/Button";
-import { Dialog } from "@/components/Dialog";
+import { Form } from "@/components/Form";
 import { generateSlug } from "@/utils/generateSlug";
 import kv from "@vercel/kv";
 import { redirect } from "next/navigation";
@@ -38,22 +37,8 @@ export default async function Home() {
           shorten your links with ease.
         </h2>
 
-        <form className="flex gap-4 mt-8" action={createLink}>
-          <input
-            className="px-4 autofill:bg-transparent w-80 py-2 focus-within:-translate-y-1 transition-transform ease-in-out duration-100 outline-none focus-within:ring ring-emerald-800 placeholder:text-neutral-500 rounded-full bg-neutral-800 text-white"
-            name="url"
-            autoFocus
-            required
-            autoComplete="off"
-            id="url"
-            type="url"
-            placeholder="https://example.com/very-long-link-oh-god-123123123"
-          />
-          <div className="cursor-pointer items-center group will-change-transform flex rounded-full duration-100 bg-emerald-800 text-white font-semibold  transition-all hover:-translate-y-1">
-            <Button />
-            <div className="h-full w-px bg-emerald-700 group-hover:bg-emerald-600"></div>
-            <Dialog />
-          </div>
+        <form className="" action={createLink}>
+          <Form />
         </form>
       </div>
     </>
