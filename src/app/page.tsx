@@ -1,8 +1,8 @@
+import { Button } from "@/components/Button";
 import { Dialog } from "@/components/Dialog";
 import { generateSlug } from "@/utils/generateSlug";
 import kv from "@vercel/kv";
 import { redirect } from "next/navigation";
-import { Button } from "@/components/Button";
 
 export const runtime = "edge";
 
@@ -14,7 +14,7 @@ const isValidUrl = (urlString: string) => {
   }
 };
 
-const createLink = async (formData: FormData) => {
+async function createLink(formData: FormData) {
   "use server";
 
   const url = formData.get("url");
@@ -27,7 +27,7 @@ const createLink = async (formData: FormData) => {
   await kv.set(slug, url.toString());
 
   redirect(`/done/${slug}`);
-};
+}
 
 export default async function Home() {
   return (
