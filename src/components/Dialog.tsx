@@ -8,7 +8,7 @@ export const Dialog = () => (
     <OGDialog.Trigger asChild>
       <button
         type="button"
-        className="hover:bg-emerald-700 focus-within:ring ring-emerald-600 rounded-r-full outline-none transition-colors flex-1 h-full px-4 flex items-center"
+        className="hover:bg-emerald-800 bg-emerald-900 focus-within:ring ring-emerald-600 rounded-r-full outline-none transition-colors flex-1 h-full px-4 flex items-center"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
