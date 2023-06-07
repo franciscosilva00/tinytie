@@ -2,7 +2,7 @@ import { Dialog } from "@/components/Dialog";
 import { generateSlug } from "@/utils/generateSlug";
 import kv from "@vercel/kv";
 import { redirect } from "next/navigation";
-import { Button } from "./(components)/Button";
+import { Button } from "@/components/Button";
 
 export const runtime = "edge";
 
