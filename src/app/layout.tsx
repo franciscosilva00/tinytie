@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     siteName: "tinytie",
     locale: "en_GB",
   },
+  metadataBase: new URL("https://tinytie.vercel.app"),
 };
 
 export default function RootLayout({
