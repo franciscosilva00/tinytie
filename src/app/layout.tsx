@@ -34,14 +34,6 @@ export const metadata: Metadata = {
     url: "https://tinytie.vercel.app",
     siteName: "tinytie",
     locale: "en_GB",
-    images: [
-      {
-        url: "https://tinytie.vercel.app/og.png",
-        width: 1200,
-        height: 630,
-        alt: "tinytie",
-      },
-    ],
   },
 };
 
