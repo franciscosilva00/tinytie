@@ -37,6 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    title: "tinytie | easily shorten links",
+    description:
+      "tinytie is a free link shortener that allows you to create short links for any page on the internet, lightning fast.",
   },
   metadataBase: new URL("https://tinytie.vercel.app"),
 };
