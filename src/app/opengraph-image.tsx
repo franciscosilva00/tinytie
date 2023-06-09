@@ -7,31 +7,17 @@ export async function GET() {
     (
       <div
         style={{
-          height: "100%",
+          fontSize: 128,
+          background: "white",
           width: "100%",
+          height: "100%",
           display: "flex",
-          flexDirection: "column",
+          textAlign: "center",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#141414",
-          fontSize: 32,
-          fontWeight: 600,
         }}
       >
-        <p
-          style={{
-            fontSize: 128,
-          }}
-        >
-          👔
-        </p>
-        <div
-          style={{
-            color: "#fff",
-          }}
-        >
-          tinytie
-        </div>
+        Hello world!
       </div>
     ),
     {
