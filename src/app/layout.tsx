@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     siteName: "tinytie",
     locale: "en_GB",
   },
+  twitter: {
+    card: "summary_large_image",
+  },
   metadataBase: new URL("https://tinytie.vercel.app"),
 };
 
