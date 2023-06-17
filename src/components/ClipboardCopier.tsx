@@ -9,11 +9,7 @@ export const ClipboardCopier = ({ text }: ClipboardCopierProps) => {
 
   if (!isClipboardEnabled) return null;
 
-  const copy = () => {
-    navigator.clipboard.writeText(text);
-  };
-
-  copy();
+  navigator.clipboard.writeText(text);
 
   return null;
 };

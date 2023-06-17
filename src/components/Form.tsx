@@ -17,7 +17,7 @@ export const Form = () => {
           autoComplete="off"
           id="url"
           type="url"
-          placeholder="https://example.com/very-long-link-oh-god-123123123"
+          placeholder="Your URL here..."
           disabled={pending}
         />
         <div className="cursor-pointer group items-center group will-change-transform flex rounded-full duration-100 bg-emerald-800 text-white font-semibold  transition-all hover:-translate-y-1">
@@ -37,6 +37,7 @@ export const Form = () => {
     </>
   ) : (
     <svg
+      aria-label="Loading..."
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"

@@ -7,6 +7,7 @@ export const Dialog = () => (
   <OGDialog.Root>
     <OGDialog.Trigger asChild>
       <button
+        aria-label="Settings"
         type="button"
         className="hover:bg-emerald-800 bg-emerald-900 focus-within:ring ring-emerald-600 rounded-r-full outline-none transition-colors flex-1 h-full px-4 flex items-center"
       >
@@ -14,6 +15,7 @@ export const Dialog = () => (
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
+          aria-hidden
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -37,10 +39,14 @@ export const Dialog = () => (
           <OGDialog.Title className="text-2xl font-medium text-neutral-100">
             Settings
           </OGDialog.Title>
-          <OGDialog.Close className="hover:opacity-60 transition-opacity">
+          <OGDialog.Close
+            aria-label="Close"
+            className="hover:opacity-60 transition-opacity"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
+              aria-hidden
               height="24"
               viewBox="0 0 24 24"
               fill="none"

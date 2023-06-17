@@ -5,7 +5,7 @@ import * as OGSwitch from "@radix-ui/react-switch";
 export const Switch = () => (
   <form>
     <div className="flex items-center justify-between">
-      <label className="text-white leading-none" htmlFor="airplane-mode">
+      <label className="text-white leading-none" htmlFor="clipboard-switch">
         Automatically copy links to clipboard
       </label>
       <OGSwitch.Root

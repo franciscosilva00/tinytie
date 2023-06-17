@@ -23,7 +23,7 @@ async function createLink(formData: FormData) {
 
 export default async function Home() {
   return (
-    <div className="flex flex-col gap-4 items-center justify-center min-h-screen">
+    <main className="flex flex-col gap-4 items-center justify-center min-h-screen">
       <h1 className="font-semibold text-5xl">tinytie</h1>
       <h2 className="text-xl text-neutral-400">
         shorten your links with ease.
@@ -32,6 +32,6 @@ export default async function Home() {
       <form className="" action={createLink}>
         <Form />
       </form>
-    </div>
+    </main>
   );
 }
